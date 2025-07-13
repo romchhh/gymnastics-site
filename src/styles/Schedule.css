@@ -1,0 +1,398 @@
+/* Schedule Page Styles */
+.schedule-page {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-main {
+  flex: 1;
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.schedule-hero {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.hero-content {
+  flex: 1;
+  padding: 0 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  flex: 1;
+  padding: 0 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Schedule Table */
+.schedule-table-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.schedule-table {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.schedule-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table thead {
+  background: #f8fafc;
+}
+
+.schedule-table th {
+  padding: 20px;
+  text-align: left;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.schedule-table td {
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+}
+
+.schedule-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.day-cell {
+  font-weight: 600;
+  color: #e74c3c;
+  font-size: 1.1rem;
+  background: #fef2f2;
+  border-right: 3px solid #e74c3c;
+}
+
+.time-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.time-cell svg {
+  color: #e74c3c;
+}
+
+.group-cell {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.level-cell {
+  text-align: center;
+}
+
+.level-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.level-badge.початковий {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.level-badge.середній {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.level-badge.продвинутий {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.level-badge.всі {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+/* Training Process */
+.training-process {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.training-process h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-item {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.process-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.process-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.process-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.process-item:hover .process-image img {
+  transform: scale(1.05);
+}
+
+.process-content {
+  padding: 1.5rem;
+}
+
+.process-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.process-content p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Important Info */
+.important-info {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.important-info h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-card {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.info-card:hover {
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.info-card svg {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.info-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.info-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 16px 32px;
+  background: #e74c3c;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .schedule-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+
+  .schedule-table {
+    overflow-x: auto;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 15px 10px;
+    font-size: 0.9rem;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-process h2,
+  .important-info h2 {
+    font-size: 2rem;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 12px 8px;
+    font-size: 0.8rem;
+  }
+
+  .day-cell {
+    font-size: 1rem;
+  }
+
+  .level-badge {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+
+  .training-process h2,
+  .important-info h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+}
