@@ -223,7 +223,7 @@ const Info = () => {
           <div className="container">
             <div className="cta-content">
               <h2>Готові спробувати?</h2>
-              <p>Попередній запис обов'язковий</p>
+              <p>Попередній запис обов&apos;язковий</p>
               <a href="https://t.me/kateryna_demydenko" className="cta-button">
                 Записатися на заняття
               </a>

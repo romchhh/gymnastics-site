@@ -145,7 +145,7 @@ const HomePage = () => {
           <div className="container mx-auto px-6 py-16">
             <div className="cta-content">
               <h2>Готові розпочати?</h2>
-              <p>Попередній запис обов'язковий</p>
+              <p>Попередній запис обов&apos;язковий</p>
               <div className="cta-buttons">
                 <a href="https://t.me/kateryna_demydenko" className="cta-button primary">
                   Записатися на заняття

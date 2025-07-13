@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Play, Heart, Star, Users, Camera, Award } from 'lucide-react';
@@ -158,7 +159,7 @@ const StudioLifePage = () => {
                         <Star key={i} className="w-5 h-5 filled" />
                       ))}
                     </div>
-                    <p>"{testimonial.text}"</p>
+                    <p>&quot;{testimonial.text}&quot;</p>
                     <div className="testimonial-author">
                       <div className="author-avatar">
                         <Heart className="w-6 h-6" />
@@ -205,14 +206,14 @@ const StudioLifePage = () => {
           <div className="container mx-auto px-6 py-16">
             <div className="cta-content">
               <h2>Готові приєднатися?</h2>
-              <p>Попередній запис обов'язковий</p>
+              <p>Попередній запис обов&apos;язковий</p>
               <div className="cta-buttons">
                 <a href="https://t.me/kateryna_demydenko" className="cta-button primary">
                   Записатися на заняття
                 </a>
-                <a href="/schedule" className="cta-button secondary">
+                <Link href="/schedule" className="cta-button secondary">
                   Подивитися розклад
-                </a>
+                </Link>
               </div>
             </div>
           </div>

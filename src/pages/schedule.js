@@ -143,9 +143,11 @@ const Schedule = () => {
               
               <div className="process-item">
                 <div className="process-image">
-                  <img 
+                  <Image 
                     src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                     alt="Заминка"
+                    width={2070}
+                    height={200}
                   />
                 </div>
                 <div className="process-content">
@@ -171,7 +173,7 @@ const Schedule = () => {
               <div className="info-card">
                 <Calendar size={32} />
                 <h3>Запис на заняття</h3>
-                <p>Попередній запис обов'язковий за 24 години</p>
+                <p>Попередній запис обов&apos;язковий за 24 години</p>
               </div>
               
               <div className="info-card">
@@ -188,7 +190,7 @@ const Schedule = () => {
           <div className="container">
             <div className="cta-content">
               <h2>Готові приєднатися?</h2>
-              <p>Попередній запис обов'язковий</p>
+              <p>Попередній запис обов&apos;язковий</p>
               <div className="cta-buttons">
                 <a href="https://t.me/kateryna_demydenko" className="cta-button primary">
                   Записатися на заняття
