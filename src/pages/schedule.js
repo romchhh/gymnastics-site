@@ -1,5 +1,6 @@
 import React from 'react';
-import { Clock, Users, Calendar, Star } from 'lucide-react';
+import Image from 'next/image';
+import { Clock, Users, Calendar } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/Schedule.css';
@@ -55,9 +56,11 @@ const Schedule = () => {
             <p>Оберіть зручний час для тренувань</p>
           </div>
           <div className="hero-image">
-            <img 
+            <Image 
               src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
               alt="Розклад занять повітряної гімнастики"
+              width={2070}
+              height={400}
             />
           </div>
         </section>
@@ -110,27 +113,31 @@ const Schedule = () => {
             <div className="process-grid">
               <div className="process-item">
                 <div className="process-image">
-                  <img 
+                  <Image 
                     src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2020&q=80" 
                     alt="Розминка"
+                    width={2020}
+                    height={200}
                   />
                 </div>
                 <div className="process-content">
                   <h3>Розминка</h3>
-                  <p>Кожне заняття починається з ретельної розминки для підготовки м'язів та суглобів</p>
+                  <p>Кожне заняття починається з ретельної розминки для підготовки м&apos;язів та суглобів</p>
                 </div>
               </div>
               
               <div className="process-item">
                 <div className="process-image">
-                  <img 
+                  <Image 
                     src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                     alt="Основна частина"
+                    width={2070}
+                    height={200}
                   />
                 </div>
                 <div className="process-content">
                   <h3>Основна частина</h3>
-                  <p>Вивчення нових елементів, відпрацювання техніки та створення зв'язок</p>
+                  <p>Вивчення нових елементів, відпрацювання техніки та створення зв&apos;язок</p>
                 </div>
               </div>
               
