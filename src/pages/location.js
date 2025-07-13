@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { MapPin, Phone, Instagram, Clock, Users, Car } from 'lucide-react';
+import { MapPin, Phone, Instagram, Clock } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
