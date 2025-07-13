@@ -1,12 +1,13 @@
 import React from 'react';
+import Link from 'next/link';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import CTASection from '../components/CTASection';
 import { Heart, MapPin, Clock, Phone, Instagram, Zap, Users, Trophy } from 'lucide-react';
 
-// Імпорт стилів
-import '../styles/Global.css';
-import '../styles/Home.css';
+// Стилі імпортуються в _app.js
 
 const HomePage = () => {
   const quickInfo = [
@@ -49,7 +50,8 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="homepage">
+    <div className="home-page">
+      <SEO />
       <Header />
       <main>
         <Hero />
@@ -62,13 +64,13 @@ const HomePage = () => {
             </div>
             <div className="quick-info-grid">
               {quickInfo.map((item, index) => (
-                <a key={index} href={item.link} className="quick-info-card">
+                <Link key={index} href={item.link} className="quick-info-card">
                   <div className="quick-info-icon">
                     {item.icon}
                   </div>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -98,11 +100,11 @@ const HomePage = () => {
                   повітряних полотен.
                 </p>
                 <div className="trainer-contact">
-                  <a href="https://t.me/kateryna_demydenko" className="contact-button">
+                  <a href="https://t.me/kateryna_demydenko" className="contact-button" target="_blank" rel="noopener noreferrer">
                     <Phone className="w-5 h-5" />
                     Telegram
                   </a>
-                  <a href="https://instagram.com/kateryna__demydenko" className="contact-button">
+                  <a href="https://instagram.com/kateryna__demydenko" className="contact-button" target="_blank" rel="noopener noreferrer">
                     <Instagram className="w-5 h-5" />
                     @kateryna__demydenko
                   </a>
@@ -133,30 +135,20 @@ const HomePage = () => {
               ))}
             </div>
             <div className="text-center mt-12">
-              <a href="/info" className="cta-button primary">
+              <Link href="/info" className="cta-button primary">
                 Дізнатися всі переваги
-              </a>
+              </Link>
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="final-cta-section">
-          <div className="container mx-auto px-6 py-16">
-            <div className="cta-content">
-              <h2>Готові розпочати?</h2>
-              <p>Попередній запис обов&apos;язковий</p>
-              <div className="cta-buttons">
-                <a href="https://t.me/kateryna_demydenko" className="cta-button primary">
-                  Записатися на заняття
-                </a>
-                <a href="/schedule" className="cta-button secondary">
-                  Подивитися розклад
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CTASection 
+          title="Готові розпочати?"
+          subtitle="Попередній запис обов'язковий"
+          primaryButtonText="Записатися на заняття"
+          secondaryButtonText="Подивитися розклад"
+        />
       </main>
       <Footer />
     </div>

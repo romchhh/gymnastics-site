@@ -1,10 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Clock, Users, Calendar } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import '../styles/Schedule.css';
-import '../styles/Global.css';
+import SEO from '../components/SEO';
+import CTASection from '../components/CTASection';
 
 const Schedule = () => {
   const scheduleData = [
@@ -46,6 +47,11 @@ const Schedule = () => {
 
   return (
     <div className="schedule-page">
+      <SEO 
+        title="Розклад занять | Студія повітряної гімнастики Катерини"
+        description="Розклад занять повітряної гімнастики для дітей та дорослих. Вівторок, четвер, субота, неділя. Попередній запис обов'язковий."
+        keywords="розклад занять, повітряна гімнастика, час тренувань, запис на заняття"
+      />
       <Header />
       
       <main className="schedule-main">
@@ -186,19 +192,13 @@ const Schedule = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="cta-section">
-          <div className="container">
-            <div className="cta-content">
-              <h2>Готові приєднатися?</h2>
-              <p>Попередній запис обов&apos;язковий</p>
-              <div className="cta-buttons">
-                <a href="https://t.me/kateryna_demydenko" className="cta-button primary">
-                  Записатися на заняття
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CTASection 
+          title="Готові приєднатися?"
+          subtitle="Попередній запис обов'язковий"
+          primaryButtonText="Записатися на заняття"
+          secondaryButtonText="Дізнатися більше"
+          secondaryButtonUrl="/info"
+        />
       </main>
       <Footer />
     </div>

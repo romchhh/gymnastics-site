@@ -31,8 +31,8 @@ const SEO = ({
     "image": image,
     "sameAs": [
       "https://www.instagram.com/kateryna__demydenko",
-      "https://t.me/kateryna_demydenko"
-    ]
+      "https://https://t.me/Kateryna_Demydenko_V"
+    ] 
   };
 
   return (

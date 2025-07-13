@@ -46,9 +46,9 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(135deg, 
-    rgba(255, 182, 193, 0.1) 0%, 
-    rgba(221, 160, 221, 0.1) 50%, 
-    rgba(173, 216, 230, 0.1) 100%
+    rgba(255, 182, 193, 0.3) 0%, 
+    rgba(255, 192, 203, 0.25) 50%, 
+    rgba(255, 218, 224, 0.2) 100%
   );
   z-index: 1;
 }
@@ -359,68 +359,7 @@
   line-height: 1.6;
 }
 
-/* Final CTA Section */
-.final-cta-section {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-}
-
-.final-cta-section .cta-content {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.final-cta-section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 1rem;
-}
-
-.final-cta-section p {
-  font-size: 1.1rem;
-  color: #64748b;
-  margin-bottom: 2rem;
-}
-
-.cta-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.final-cta-section .cta-button.primary {
-  background: #e74c3c;
-  color: #ffffff;
-  padding: 16px 32px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.final-cta-section .cta-button.primary:hover {
-  background: #c0392b;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3);
-}
-
-.final-cta-section .cta-button.secondary {
-  background: transparent;
-  color: #64748b;
-  border: 2px solid #e2e8f0;
-  padding: 16px 32px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.final-cta-section .cta-button.secondary:hover {
-  background: #f8fafc;
-  color: #2c3e50;
-  border-color: #cbd5e1;
-}
+/* Final CTA Section - using unified component */
 
 /* Common Styles */
 .section-title {
@@ -549,14 +488,7 @@
     font-size: 2rem;
   }
   
-  .final-cta-section h2 {
-    font-size: 2rem;
-  }
-  
-  .cta-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
+
 }
 
 @media (max-width: 480px) {
@@ -580,12 +512,5 @@
     font-size: 1.8rem;
   }
   
-  .final-cta-section h2 {
-    font-size: 1.8rem;
-  }
-  
-  .cta-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
+
 }

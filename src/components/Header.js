@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Facebook, Instagram, Phone, Mail, Menu, X } from 'lucide-react';
-import '../styles/Header.css';
+import Link from 'next/link';
+import { Instagram, Phone, Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,29 +22,29 @@ const Header = () => {
 
         {/* Navigation Links */}
         <nav className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
-          <a href="/" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="/" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
             Головна
-          </a>
-          <a href="/location" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+          </Link>
+          <Link href="/location" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
             Локація
-          </a>
-          <a href="/schedule" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+          </Link>
+          <Link href="/schedule" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
             Розклад
-          </a>
-          <a href="/studio-life" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+          </Link>
+          <Link href="/studio-life" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
             Життя студії
-          </a>
-          <a href="/info" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+          </Link>
+          <Link href="/info" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
             Інформація
-          </a>
+          </Link>
         </nav>
 
         {/* Social Icons */}
         <div className="social-icons">
-          <a href="https://instagram.com/kateryna__demydenko" className="social-icon">
+          <a href="https://instagram.com/kateryna__demydenko" className="social-icon" target="_blank" rel="noopener noreferrer">
             <Instagram size={20} />
           </a>
-          <a href="https://t.me/kateryna_demydenko" className="social-icon">
+          <a href="https://t.me/Kateryna_Demydenko_V" className="social-icon" target="_blank" rel="noopener noreferrer">
             <Phone size={20} />
           </a>
         </div>

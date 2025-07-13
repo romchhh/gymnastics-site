@@ -2,9 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
+import CTASection from '../components/CTASection';
 import { Play, Heart, Star, Users, Camera, Award } from 'lucide-react';
-import '../styles/Global.css';
-import '../styles/StudioLife.css';
 
 const StudioLifePage = () => {
   const galleryItems = [
@@ -78,6 +78,11 @@ const StudioLifePage = () => {
 
   return (
     <div className="studio-life-page">
+      <SEO 
+        title="Життя студії | Студія повітряної гімнастики Катерини"
+        description="Дізнайтеся про життя нашої студії повітряної гімнастики. Фотогалерея, відгуки студентів та атмосфера наших тренувань."
+        url="https://aerial-gymnastics-studio.vercel.app/studio-life"
+      />
       <Header />
       <main className="studio-life-main">
         {/* Hero Section */}
@@ -202,22 +207,12 @@ const StudioLifePage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="studio-life-cta">
-          <div className="container mx-auto px-6 py-16">
-            <div className="cta-content">
-              <h2>Готові приєднатися?</h2>
-              <p>Попередній запис обов&apos;язковий</p>
-              <div className="cta-buttons">
-                <a href="https://t.me/kateryna_demydenko" className="cta-button primary">
-                  Записатися на заняття
-                </a>
-                <Link href="/schedule" className="cta-button secondary">
-                  Подивитися розклад
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CTASection 
+          title="Готові приєднатися?"
+          subtitle="Попередній запис обов'язковий"
+          primaryButtonText="Записатися на заняття"
+          secondaryButtonText="Подивитися розклад"
+        />
       </main>
       <Footer />
     </div>

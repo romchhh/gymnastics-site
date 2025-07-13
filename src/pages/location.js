@@ -1,13 +1,20 @@
 import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { MapPin, Phone, Instagram, Clock, Users, Car } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import '../styles/Location.css';
-import '../styles/Global.css';
+import SEO from '../components/SEO';
+import CTASection from '../components/CTASection';
 
 const Location = () => {
   return (
     <div className="location-page">
+      <SEO 
+        title="Локація та контакти | Студія повітряної гімнастики Катерини"
+        description="Знайдіть нашу студію повітряної гімнастики в Києві. Адреса: бульв. Миколи Руденка, 12, ТЦ Дніпро, 3 поверх. Телефон: 067-705-15-20"
+        url="https://aerial-gymnastics-studio.vercel.app/location"
+      />
       <Header />
       
       <main className="location-main">
@@ -18,9 +25,11 @@ const Location = () => {
             <p>Знайдіть нас у самому серці міста</p>
           </div>
           <div className="hero-image">
-            <img 
+            <Image 
               src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
               alt="Студія повітряної гімнастики"
+              width={2070}
+              height={400}
             />
           </div>
         </section>
@@ -77,9 +86,11 @@ const Location = () => {
             <h2>Наша студія</h2>
             <div className="photos-grid">
               <div className="photo-item">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2020&q=80" 
                   alt="Зал для повітряної гімнастики"
+                  width={600}
+                  height={400}
                 />
                 <div className="photo-overlay">
                   <h3>Просторий зал</h3>
@@ -88,9 +99,11 @@ const Location = () => {
               </div>
               
               <div className="photo-item">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                   alt="Роздягальня"
+                  width={600}
+                  height={400}
                 />
                 <div className="photo-overlay">
                   <h3>Зручні роздягальні</h3>
@@ -99,9 +112,11 @@ const Location = () => {
               </div>
               
               <div className="photo-item">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                   alt="Зона відпочинку"
+                  width={600}
+                  height={400}
                 />
                 <div className="photo-overlay">
                   <h3>Зона відпочинку</h3>
@@ -112,31 +127,7 @@ const Location = () => {
           </div>
         </section>
 
-        {/* Location Features */}
-        <section className="location-features">
-          <div className="container">
-            <h2>Переваги нашої локації</h2>
-            <div className="features-grid">
-              <div className="feature-item">
-                <Car size={48} />
-                <h3>Зручне паркування</h3>
-                <p>Велика парковка біля торгового центру</p>
-              </div>
-              
-              <div className="feature-item">
-                <MapPin size={48} />
-                <h3>Центр міста</h3>
-                <p>Легко дістатися громадським транспортом</p>
-              </div>
-              
-              <div className="feature-item">
-                <Users size={48} />
-                <h3>Безпечне середовище</h3>
-                <p>Охорона та відеоспостереження 24/7</p>
-              </div>
-            </div>
-          </div>
-        </section>
+       
 
         {/* Map Section */}
         <section className="map-section">
@@ -144,9 +135,11 @@ const Location = () => {
             <h2>Як нас знайти</h2>
             <div className="map-container">
               <div className="map-placeholder">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" 
                   alt="Карта локації"
+                  width={800}
+                  height={500}
                 />
                 <div className="map-overlay">
                   <h3>ТЦ Дніпро</h3>
@@ -157,8 +150,8 @@ const Location = () => {
               <div className="directions">
                 <h3>Як дістатися</h3>
                 <ul>
-                  <li>🚇 Метро: станція "Позняки" (5 хвилин пішки)</li>
-                  <li>🚌 Автобус: зупинка "ТЦ Дніпро"</li>
+                  <li>🚇 Метро: станція &quot;Позняки&quot; (5 хвилин пішки)</li>
+                  <li>🚌 Автобус: зупинка &quot;ТЦ Дніпро&quot;</li>
                   <li>🚗 Автомобіль: безкоштовна парковка</li>
                   <li>🚶 Пішки: від центру міста 20 хвилин</li>
                 </ul>
@@ -168,17 +161,12 @@ const Location = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="cta-section">
-          <div className="container">
-            <div className="cta-content">
-              <h2>Готові розпочати?</h2>
-              <p>Попередній запис обов&apos;язковий</p>
-              <a href="https://t.me/kateryna_demydenko" className="cta-button">
-                Записатися на заняття
-              </a>
-            </div>
-          </div>
-        </section>
+        <CTASection 
+          title="Готові розпочати?"
+          subtitle="Попередній запис обов'язковий"
+          primaryButtonText="Записатися на заняття"
+          secondaryButtonText="Подивитися розклад"
+        />
       </main>
       <Footer />
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -20,12 +21,12 @@ const Hero = () => {
               Розвиток сили, гнучкості та впевненості у собі через красу повітряних полотен
             </p>
             <div className="hero-buttons">
-              <a href="https://t.me/kateryna_demydenko" className="cta-button primary">
+              <a href="https://t.me/Kateryna_Demydenko_V" className="cta-button primary" target="_blank" rel="noopener noreferrer">
                 ЗАПИСАТИСЯ НА ЗАНЯТТЯ
               </a>
-              <a href="/info" className="cta-button secondary">
+              <Link href="/info" className="cta-button secondary">
                 ДІЗНАТИСЯ БІЛЬШЕ
-              </a>
+              </Link>
             </div>
           </div>
         </div>
