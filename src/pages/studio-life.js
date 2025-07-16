@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import CTASection from '../components/CTASection';
-import { Play, Heart, Star, Users, Camera, Award, Trophy, User, Instagram } from 'lucide-react';
+import { Heart, Star, Users, Camera, Award, Trophy, Instagram } from 'lucide-react';
 
 const StudioLifePage = () => {
   const galleryItems = [

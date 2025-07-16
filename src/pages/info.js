@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Heart, Zap, Users, Shield, Star, Award, MapPin, Clock, Phone } from 'lucide-react';
+import { MapPin, Clock, Phone } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
@@ -56,7 +56,7 @@ const Info = () => {
                   <div className="benefit-number">1</div>
                   <div>
                     <h3>Розвиток фізичної сили та витривалості</h3>
-                    <p>Заняття зміцнюють м'язи всього тіла, особливо рук, ніг та спини.</p>
+                    <p>Заняття зміцнюють м&apos;язи всього тіла, особливо рук, ніг та спини.</p>
                   </div>
                 </div>
                 
@@ -118,7 +118,7 @@ const Info = () => {
                   <div className="benefit-number">1</div>
                   <div>
                     <h3>Фізичний тонус і підтягнуте тіло</h3>
-                    <p>Заняття допомагають зміцнити м'язи, зробити тіло гнучким і витонченим.</p>
+                    <p>Заняття допомагають зміцнити м&apos;язи, зробити тіло гнучким і витонченим.</p>
                   </div>
                 </div>
                 
@@ -187,7 +187,7 @@ const Info = () => {
               
               <div className="info-card">
                 <Phone size={48} />
-                <h3>Попередній запис обов'язковий</h3>
+                <h3>Попередній запис обов&apos;язковий</h3>
                 <p><strong>📱0677051520</strong></p>
               </div>
             </div>
