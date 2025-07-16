@@ -8,7 +8,7 @@
     rgba(240, 248, 255, 0.9) 50%, 
     rgba(250, 245, 255, 0.9) 100%
   ),
-  url('https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  url('/images/main.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -232,26 +232,21 @@
 .trainer-image .image-placeholder {
   width: 100%;
   height: 400px;
-  background: linear-gradient(135deg, rgba(231, 76, 60, 0.8), rgba(192, 57, 43, 0.8)),
-              url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background: url('/images/IMAGE 2025-07-16 14:45:55.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 30px rgba(231, 76, 60, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 .trainer-image .image-placeholder:hover {
   transform: scale(1.02);
-  box-shadow: 0 15px 40px rgba(231, 76, 60, 0.3);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .trainer-image .placeholder-content {
-  text-align: center;
-  color: white;
+  display: none;
 }
 
 .trainer-text h2 {

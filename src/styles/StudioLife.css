@@ -33,7 +33,7 @@
     rgba(192, 57, 43, 0.8) 50%, 
     rgba(44, 62, 80, 0.9) 100%
   ),
-  url('https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  url('/images/IMAGE 2025-07-16 15:57:24.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -75,6 +75,149 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* Instagram Section */
+.instagram-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.instagram-section .section-title {
+  color: white;
+}
+
+.instagram-section .section-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.instagram-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.instagram-photo {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.instagram-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.instagram-photo:hover .instagram-image {
+  transform: scale(1.05);
+}
+
+.instagram-info {
+  text-align: center;
+  padding: 32px;
+}
+
+.instagram-icon {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-icon svg {
+  color: #e74c3c;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.instagram-info h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.instagram-info p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.instagram-link {
+  display: inline-block;
+  background: #e74c3c;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(231, 76, 60, 0.3);
+}
+
+.instagram-link:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(231, 76, 60, 0.4);
+}
+
+/* History Section */
+.history-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.history-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.history-text h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 24px;
+}
+
+.history-text p {
+  font-size: 1.2rem;
+  color: #666666;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.history-stats {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  margin-top: 40px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item .stat-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #e74c3c;
+  margin-bottom: 8px;
+}
+
+.stat-item .stat-label {
+  font-size: 1.1rem;
+  color: #666666;
+  font-weight: 500;
+}
+
 /* Gallery Section */
 .gallery-section {
   padding: 80px 0;
@@ -109,22 +252,17 @@
   overflow: hidden;
 }
 
-.image-placeholder {
+.gallery-photo {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  transition: all 0.3s ease;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.gallery-item:hover .image-placeholder {
+.gallery-item:hover .gallery-photo {
   transform: scale(1.05);
 }
 
-.video-overlay,
 .photo-overlay {
   position: absolute;
   top: 50%;
@@ -135,10 +273,11 @@
   padding: 20px;
   color: white;
   transition: all 0.3s ease;
+  opacity: 0;
 }
 
-.gallery-item:hover .video-overlay,
 .gallery-item:hover .photo-overlay {
+  opacity: 1;
   background: rgba(192, 57, 43, 0.95);
   transform: translate(-50%, -50%) scale(1.1);
 }
@@ -185,6 +324,181 @@
 .testimonials-section {
   padding: 80px 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Trainers Section */
+.trainers-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.trainers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 48px;
+  margin-top: 60px;
+}
+
+.trainer-card {
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+}
+
+.trainer-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+  border-color: #e74c3c;
+}
+
+.trainer-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 24px 24px 0 24px;
+}
+
+.trainer-photo {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.trainer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.trainer-photo:hover .trainer-image {
+  transform: scale(1.1);
+}
+
+.trainer-info {
+  padding: 32px 24px 24px 24px;
+  text-align: center;
+}
+
+.trainer-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.trainer-description {
+  color: #666666;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Competitions Section */
+.competitions-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+}
+
+.competitions-section .section-title {
+  color: white;
+}
+
+.competitions-section .section-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.competitions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+  margin-top: 60px;
+}
+
+.competition-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.competition-photo {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.competition-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.competition-card:hover .competition-image {
+  transform: scale(1.05);
+}
+
+.competition-content {
+  padding: 32px;
+  text-align: center;
+}
+
+.competition-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.1) 0%, rgba(192, 57, 43, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.competition-card:hover::before {
+  opacity: 1;
+}
+
+.competition-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.competition-icon {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.competition-icon svg {
+  color: #e74c3c;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.competition-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.competition-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .testimonials-grid {
@@ -352,6 +666,20 @@
     grid-template-columns: 1fr;
   }
   
+  .instagram-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .instagram-info {
+    padding: 24px;
+  }
+  
+  .history-stats {
+    flex-direction: column;
+    gap: 32px;
+  }
+  
   .gallery-item {
     margin: 0 auto;
     max-width: 400px;
@@ -359,6 +687,29 @@
   
   .testimonials-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .trainers-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .trainer-photos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    padding: 16px 16px 0 16px;
+  }
+  
+  .competitions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .competition-photo {
+    height: 180px;
+  }
+  
+  .competition-content {
+    padding: 24px;
   }
   
   .stats-grid {
@@ -377,6 +728,30 @@
     font-size: 1rem;
   }
   
+  .instagram-content {
+    gap: 24px;
+  }
+  
+  .instagram-info {
+    padding: 20px;
+  }
+  
+  .instagram-info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .instagram-info p {
+    font-size: 1rem;
+  }
+  
+  .history-text h3 {
+    font-size: 1.6rem;
+  }
+  
+  .history-text p {
+    font-size: 1.1rem;
+  }
+  
   .gallery-content {
     padding: 20px;
   }
@@ -393,6 +768,39 @@
     font-size: 1rem;
   }
   
+  .trainer-card {
+    margin: 0 16px;
+  }
+  
+  .trainer-photos {
+    padding: 12px 12px 0 12px;
+    gap: 4px;
+  }
+  
+  .trainer-info {
+    padding: 24px 16px 16px 16px;
+  }
+  
+  .trainer-name {
+    font-size: 1.3rem;
+  }
+  
+  .competition-card {
+    margin: 0 16px;
+  }
+  
+  .competition-photo {
+    height: 160px;
+  }
+  
+  .competition-content {
+    padding: 20px;
+  }
+  
+  .competition-title {
+    font-size: 1.2rem;
+  }
+  
   .stats-grid {
     grid-template-columns: 1fr;
   }
@@ -404,6 +812,4 @@
   .stat-number {
     font-size: 2.5rem;
   }
-  
-
 } 

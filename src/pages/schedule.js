@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Clock, Users, Calendar } from 'lucide-react';
+import { Clock, Users, Calendar, DollarSign } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
@@ -11,35 +11,29 @@ const Schedule = () => {
     {
       day: 'Вівторок',
       classes: [
-        { time: '18:00 - 19:00', group: 'Дитяча група (6-12 років)', level: 'Початковий' },
-        { time: '19:15 - 20:15', group: 'Підліткова група (13-17 років)', level: 'Середній' },
-        { time: '20:30 - 21:30', group: 'Доросла група (18+)', level: 'Всі рівні' }
+        { time: '15:00 - 16:00', group: 'Всі віки', level: 'Всі рівні' },
+        { time: '16:00 - 17:00', group: 'Всі віки', level: 'Всі рівні' }
       ]
     },
     {
       day: 'Четвер',
       classes: [
-        { time: '18:00 - 19:00', group: 'Дитяча група (6-12 років)', level: 'Початковий' },
-        { time: '19:15 - 20:15', group: 'Підліткова група (13-17 років)', level: 'Середній' },
-        { time: '20:30 - 21:30', group: 'Доросла група (18+)', level: 'Всі рівні' }
+        { time: '15:00 - 16:00', group: 'Всі віки', level: 'Всі рівні' },
+        { time: '16:00 - 17:00', group: 'Всі віки', level: 'Всі рівні' }
       ]
     },
     {
       day: 'Субота',
       classes: [
-        { time: '10:00 - 11:00', group: 'Ранкова група (всі віки)', level: 'Початковий' },
-        { time: '11:30 - 12:30', group: 'Сімейні заняття', level: 'Всі рівні' },
-        { time: '13:00 - 14:30', group: 'Інтенсив для досвідчених', level: 'Продвинутий' },
-        { time: '15:00 - 16:00', group: 'Вечірня група', level: 'Середній' }
+        { time: '15:00 - 16:00', group: 'Всі віки', level: 'Всі рівні' },
+        { time: '16:00 - 17:00', group: 'Всі віки', level: 'Всі рівні' }
       ]
     },
     {
       day: 'Неділя',
       classes: [
-        { time: '10:00 - 11:00', group: 'Ранкова група (всі віки)', level: 'Початковий' },
-        { time: '11:30 - 12:30', group: 'Сімейні заняття', level: 'Всі рівні' },
-        { time: '13:00 - 14:30', group: 'Майстер-клас', level: 'Продвинутий' },
-        { time: '15:00 - 16:00', group: 'Вечірня група', level: 'Середній' }
+        { time: '14:00 - 15:00', group: 'Всі віки', level: 'Всі рівні' },
+        { time: '15:00 - 16:00', group: 'Всі віки', level: 'Всі рівні' }
       ]
     }
   ];
@@ -62,7 +56,7 @@ const Schedule = () => {
           </div>
           <div className="hero-image">
             <Image 
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+              src="/images/IMAGE 2025-07-16 15:33:12.jpg" 
               alt="Розклад занять повітряної гімнастики"
               width={2070}
               height={400}
@@ -119,8 +113,8 @@ const Schedule = () => {
               <div className="process-item">
                 <div className="process-image">
                   <Image 
-                    src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2020&q=80" 
-                    alt="Розминка"
+                    src="/images/IMAGE 2025-07-16 15:32:44.jpg" 
+                    alt="Розминка, підказка, розвиток гнучкості"
                     width={2020}
                     height={200}
                   />
@@ -134,8 +128,8 @@ const Schedule = () => {
               <div className="process-item">
                 <div className="process-image">
                   <Image 
-                    src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                    alt="Основна частина"
+                    src="/images/IMAGE 2025-07-16 15:33:33.jpg" 
+                    alt="Основна частина, відпрацювання техніки, створення зв'язок"
                     width={2070}
                     height={200}
                   />
@@ -149,7 +143,7 @@ const Schedule = () => {
               <div className="process-item">
                 <div className="process-image">
                   <Image 
-                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                    src="/images/IMAGE 2025-07-16 15:33:51.jpg" 
                     alt="Заминка"
                     width={2070}
                     height={200}
@@ -185,6 +179,12 @@ const Schedule = () => {
                 <Clock size={32} />
                 <h3>Тривалість</h3>
                 <p>Стандартне заняття триває 60 хвилин</p>
+              </div>
+              
+              <div className="info-card">
+                <DollarSign size={32} />
+                <h3>Вартість занять</h3>
+                <p>Перше заняття - 250 грн, наступні заняття - 300 грн</p>
               </div>
             </div>
           </div>

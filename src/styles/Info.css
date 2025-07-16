@@ -97,6 +97,20 @@
   align-items: center;
 }
 
+.benefit-number {
+  width: 40px;
+  height: 40px;
+  background: #e74c3c;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
 .benefits-content.reverse {
   direction: rtl;
 }
@@ -368,6 +382,103 @@
   .benefits-header h2,
   .health-benefits h2,
   .what-to-expect h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Personal Message */
+.personal-message {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  text-align: center;
+}
+
+.message-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.message-content p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Schedule and Location */
+.schedule-location {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.info-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card svg {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.info-card p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Final CTA */
+.final-cta {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  text-align: center;
+}
+
+.final-cta h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .personal-message .message-content h2 {
+    font-size: 2rem;
+  }
+  
+  .personal-message .message-content p {
+    font-size: 1.1rem;
+  }
+  
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .final-cta h2 {
     font-size: 2rem;
   }
 }

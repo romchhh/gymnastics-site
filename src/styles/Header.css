@@ -113,6 +113,13 @@ header {
   border-color: #e74c3c;
 }
 
+.social-icon.telegram-icon:hover {
+  background: #0088cc;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 136, 204, 0.3);
+  border-color: #0088cc;
+}
+
 .mobile-menu-button {
   display: none;
   background: none;

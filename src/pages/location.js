@@ -25,7 +25,7 @@ const Location = () => {
           </div>
           <div className="hero-image">
             <Image 
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+              src="/images/IMAGE 2025-07-16 15:18:44.jpg" 
               alt="Студія повітряної гімнастики"
               width={2070}
               height={400}
@@ -86,7 +86,7 @@ const Location = () => {
             <div className="photos-grid">
               <div className="photo-item">
                 <Image 
-                  src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2020&q=80" 
+                  src="/images/IMAGE 2025-07-16 15:18:48.jpg" 
                   alt="Зал для повітряної гімнастики"
                   width={600}
                   height={400}
@@ -99,7 +99,7 @@ const Location = () => {
               
               <div className="photo-item">
                 <Image 
-                  src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                  src="/images/IMAGE 2025-07-16 15:18:51.jpg" 
                   alt="Роздягальня"
                   width={600}
                   height={400}
@@ -112,7 +112,7 @@ const Location = () => {
               
               <div className="photo-item">
                 <Image 
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                  src="/images/IMAGE 2025-07-16 15:18:53.jpg" 
                   alt="Зона відпочинку"
                   width={600}
                   height={400}
@@ -135,7 +135,7 @@ const Location = () => {
             <div className="map-container">
               <div className="map-placeholder">
                 <Image 
-                  src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" 
+                  src="/images/Знімок екрана 2025-07-16 о 15.17.21.png" 
                   alt="Карта локації"
                   width={800}
                   height={500}

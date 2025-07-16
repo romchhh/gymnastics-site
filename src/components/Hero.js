@@ -10,9 +10,10 @@ const Hero = () => {
         <div className="container mx-auto px-6 h-full flex items-center">
           <div className="hero-text">
             <h1 className="hero-title">
+              
+              <span className="hero-title-line">Inspiration</span>
               <span className="hero-title-line">Повітряна</span>
               <span className="hero-title-line">гімнастика</span>
-              <span className="hero-title-line">з Катериною</span>
             </h1>
             <p className="hero-subtitle">
               Для дітей від 8 років та дорослих
