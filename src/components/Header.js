@@ -37,6 +37,9 @@ const Header = () => {
           <Link href="/info" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
             Інформація
           </Link>
+          <Link href="/photosessions" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+            Фотосесії
+          </Link>
         </nav>
 
         {/* Social Icons */}

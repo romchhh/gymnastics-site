@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Clock, Users, Calendar, DollarSign } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -110,7 +111,7 @@ const Schedule = () => {
           <div className="container">
             <h2>Як проходять тренування</h2>
             <div className="process-grid">
-              <div className="process-item">
+              <Link href="/rozmynka" className="process-item">
                 <div className="process-image">
                   <Image 
                     src="/images/IMAGE 2025-07-16 15:32:44.jpg" 
@@ -123,9 +124,9 @@ const Schedule = () => {
                   <h3>Розминка</h3>
                   <p>Кожне заняття починається з ретельної розминки для підготовки м&apos;язів та суглобів</p>
                 </div>
-              </div>
+              </Link>
               
-              <div className="process-item">
+              <Link href="/osnovna" className="process-item">
                 <div className="process-image">
                   <Image 
                     src="/images/IMAGE 2025-07-16 15:33:33.jpg" 
@@ -138,9 +139,9 @@ const Schedule = () => {
                   <h3>Основна частина</h3>
                   <p>Вивчення нових елементів, відпрацювання техніки та створення зв&apos;язок</p>
                 </div>
-              </div>
+              </Link>
               
-              <div className="process-item">
+              <Link href="/roztiazhka" className="process-item">
                 <div className="process-image">
                   <Image 
                     src="/images/IMAGE 2025-07-16 15:33:51.jpg" 
@@ -153,7 +154,22 @@ const Schedule = () => {
                   <h3>Заминка та розтяжка</h3>
                   <p>Завершення тренування розтяжкою для відновлення та покращення гнучкості</p>
                 </div>
-              </div>
+              </Link>
+
+              <Link href="/parni" className="process-item">
+                <div className="process-image">
+                  <Image 
+                    src="/images/parni/photo_2025-07-16_22-27-08.jpg" 
+                    alt="Парні елементи"
+                    width={2070}
+                    height={200}
+                  />
+                </div>
+                <div className="process-content">
+                  <h3>Парні елементи</h3>
+                  <p>Виконання складних елементів у парі на повітряних полотнах</p>
+                </div>
+              </Link>
             </div>
           </div>
         </section>

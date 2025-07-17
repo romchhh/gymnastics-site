@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Instagram } from 'lucide-react';
 
 const Footer = () => {
@@ -6,6 +7,15 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
+          <div className="footer-nav">
+            <Link href="/" className="footer-link">Головна</Link>
+            <Link href="/location" className="footer-link">Локація</Link>
+            <Link href="/schedule" className="footer-link">Розклад</Link>
+            <Link href="/studio-life" className="footer-link">Життя студії</Link>
+            <Link href="/info" className="footer-link">Інформація</Link>
+            <Link href="/photosessions" className="footer-link">Фотосесії</Link>
+          </div>
+          
           <div className="footer-social">
             <a href="https://www.instagram.com/i_n_s_p_i_r_a_t_i_o_n_2019?utm_source=qr&igsh=Z2VpbDVpOHZhdHRp" className="footer-social-icon" target="_blank" rel="noopener noreferrer">
               <Instagram size={20} />

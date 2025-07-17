@@ -10,6 +10,7 @@ import '../styles/Schedule.css';
 import '../styles/StudioLife.css';
 import '../styles/About.css';
 import '../styles/Classes.css';
+import '../styles/Gallery.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
