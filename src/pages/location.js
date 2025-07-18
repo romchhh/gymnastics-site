@@ -61,8 +61,8 @@ const Location = () => {
                   <Instagram size={32} />
                 </div>
                 <h3>Instagram</h3>
-                <a href="https://instagram.com/kateryna__demydenko" target="_blank" rel="noopener noreferrer">
-                  @kateryna__demydenko
+                <a href="https://www.instagram.com/i_n_s_p_i_r_a_t_i_o_n_2019?utm_source=qr&igsh=Z2VpbDVpOHZhdHRp" target="_blank" rel="noopener noreferrer">
+                  @i_n_s_p_i_r_a_t_i_o_n_2019
                 </a>
                 <p>Слідкуйте за нашими новинами</p>
               </div>
@@ -72,8 +72,8 @@ const Location = () => {
                   <Clock size={32} />
                 </div>
                 <h3>Години роботи</h3>
-                <p>Вт, Чт: 18:00 - 21:00</p>
-                <p>Сб, Нд: 10:00 - 16:00</p>
+                <p>Вт, Чт, Cб: 15:00 - 16:00, 16:00 - 17:00</p>
+                <p>Нд: 14:00 - 15:00, 15:00 - 16:00</p>
               </div>
             </div>
           </div>

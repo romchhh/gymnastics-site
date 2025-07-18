@@ -8,7 +8,6 @@ import CTASection from '../components/CTASection';
 const Photosessions = () => {
   const galleryPhotos = [
     '/images/photosession/IMAGE 2025-07-17 12:19:42.jpg',
-    '/images/photosession/IMAGE 2025-07-17 12:19:40.jpg',
     '/images/photosession/IMAGE 2025-07-17 12:19:38.jpg',
     '/images/photosession/IMAGE 2025-07-17 12:19:36.jpg',
     '/images/photosession/IMAGE 2025-07-17 12:19:33.jpg',
